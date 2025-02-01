@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import { useTranslation } from 'next-i18next';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const { t } = useTranslation('common');
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html>
+  <head>
+    <title>{t('blog')}</title>
+  </head>
+  <body>
+    <Navbar />
+    <div id="container">
+      <main>
+        <h1>{t('blog')}</h1>
+        <p>{t('blog_content')}</p>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+---
+const languages = {
+  pl: "Polski",
+  en: "English",
+};
+
+const changeLanguage = (lang) => {
+  window.location.href = `/${lang}`;
+};
+---
+
+<div>
+  {Object.entries(languages).map(([code, name]) => (
+    <button onclick={() => changeLanguage(code)}>{name}</button>
+  ))}
+</div>

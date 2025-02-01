@@ -1,0 +1,25 @@
+---
+import { useTranslations, getLocale } from "astro-i18n";
+import "../styles/global.css";
+
+const { t } = useTranslations();
+const locale = getLocale(Astro);
+---
+
+<nav
+    class="flex justify-between items-center p-4 bg-white bg-opacity-90 shadow-md"
+>
+    <div class="flex space-x-4">
+        <a href="/blog" class="text-blue-500 hover:text-blue-700 font-medium"
+            >{t("go_to_blog")}</a
+        >
+        <a
+            href={locale === "pl" ? "/" : "/pl"}
+            class="text-gray-700 hover:text-gray-900">PL</a
+        >
+        <a
+            href={locale === "en" ? "/" : "/en"}
+            class="text-gray-700 hover:text-gray-900">EN</a
+        >
+    </div>
+</nav>

@@ -1,5 +1,8 @@
 {
   "welcome": "Welcome!",
-  "go_to_blog": "Go to blog",
-  "blog": "Blog"
+  "go_to_blog": "Go to Blog",
+  "read_docs": "Read our docs",
+  "join_discord": "Join our Discord",
+  "blog": "Blog",
+  "blog_content": "This is the blog page."
 }
