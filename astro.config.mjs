@@ -1,5 +1,15 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import i18n from 'astro-i18n';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+    i18n: {
+        locales: ["pl", "en"],
+        defaultLocale: "en",
+    },
+    routing: {
+        prefixDefaultLocale: true
+    },
+    vite: {
+        plugins: [tailwindcss()],
+    },
+})

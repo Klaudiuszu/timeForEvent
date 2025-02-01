@@ -1,5 +1,8 @@
 {
-    "welcome": "Witaj!",
-    "go_to_blog": "Przejdź do bloga",
-    "blog": "Blog"
-  }
+  "welcome": "Welcome!",
+  "go_to_blog": "Go to Blog",
+  "read_docs": "Read our docs",
+  "join_discord": "Join our Discord",
+  "blog": "Blog",
+  "blog_content": "To jest BLGOUŚ byczku a czemu!?to ja nie wiem"
+}
